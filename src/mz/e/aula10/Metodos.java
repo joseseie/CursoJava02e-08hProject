@@ -28,12 +28,34 @@ public class Metodos {
         return msg;
     }
     
+    static String lerMsg (int idade, String nome) {
+        Scanner s = new Scanner(System.in);
+        String stratamento = (idade > 21 && idade < 30) ? "Jovem" 
+                : (idade > 31) ? "Sr. " : "";
+        
+        System.out.println(stratamento + " " + nome + ", insira a mensagem desejada:");
+        String msg = s.nextLine();
+
+        return msg;
+    }
+    
+    static String lerMsg () {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Insira a mensagem desejada:");
+        String msg = s.nextLine();
+
+        return msg;
+    }
+    
     
     public static void main(String[] args) {
         
-        String str = lerMsg ("Carlos");
+//        String str = lerMsg ();
+//        String str1 = lerMsg ("Carlos");
+        String str2 = lerMsg (29, "Carlos");
         
-        mostrarMensagem(str);
+        mostrarMensagem(str2);
+        
 
     }
     
