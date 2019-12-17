@@ -23,6 +23,11 @@ public class Chefe extends Funcionario {
         System.out.println("O chefe " + this.nome +", atrasou... que feio!");
 
     }
+
+    @Override
+    public void trabalhar() {
+        System.out.println("Chefe está a assinar papeis...");
+    }
     
     
     

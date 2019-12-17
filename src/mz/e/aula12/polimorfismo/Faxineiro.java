@@ -15,4 +15,9 @@ package mz.e.aula12.polimorfismo;
  */
 public class Faxineiro extends Funcionario {
     
+    @Override
+    public void trabalhar() {
+        System.out.println("O fachineiro Está a trabalhar...");
+    }
+    
 }

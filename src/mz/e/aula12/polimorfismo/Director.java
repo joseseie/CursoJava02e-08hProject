@@ -15,4 +15,9 @@ package mz.e.aula12.polimorfismo;
  */
 public class Director extends Funcionario {
     
+    @Override
+    public void trabalhar() {
+        System.out.println("Director coordena o trabalho...");
+    }
+    
 }

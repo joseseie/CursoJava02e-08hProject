@@ -13,7 +13,7 @@ package mz.e.aula12.polimorfismo;
  * @author Nicolas Muchate
  * @author Hassan Mutola
  */
-public class Pessoa {
+public abstract class Pessoa {
     
     String nome;
     private int idade;

@@ -13,6 +13,8 @@ package mz.e.aula12.polimorfismo;
  * @author Nicolas Muchate
  * @author Hassan Mutola
  */
-public class Funcionario extends Pessoa {
+public abstract class Funcionario extends Pessoa {
+    
+    public abstract void trabalhar () ;
     
 }

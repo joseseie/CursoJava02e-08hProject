@@ -17,19 +17,22 @@ public class TesteHeranca {
     
     public static void main(String[] args) {
         
-        Pessoa pessoa = new Pessoa();
-        Pessoa chefe = new Chefe();
+//        Pessoa pessoa  = new Pessoa();
+        
+        Funcionario chefe = new Chefe();
         chefe.setNome("Marcos");
-        Pessoa funcionario = new Funcionario();
+//        Pessoa funcionario = new Funcionario();
         Pessoa director = new Director();
-        Pessoa faxineiro = new Faxineiro();
+        Funcionario faxineiro = new Faxineiro();
         Pessoa visitante = new Visitante();
         visitante.setNome("João");
         
+        chefe.trabalhar();
+        faxineiro.trabalhar();
        
-        chefe.atrasar();
-        visitante.atrasar();
-        
+//        chefe.atrasar();
+//        visitante.atrasar();
+//        
     }
     
 }
